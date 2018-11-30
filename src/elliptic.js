@@ -93,7 +93,7 @@ export class Elements {
   /**
    * Position returns observed equatorial coordinates of a body with Keplerian elements.
    *
-   * Argument e must be a valid V87Planet object for Earth.
+   * Argument earth must be a valid V87Planet object for Earth.
    *
    * Results are right ascension and declination α and δ, and elongation ψ,
    * all in radians.

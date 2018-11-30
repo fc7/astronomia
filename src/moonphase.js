@@ -32,7 +32,7 @@ function snap (y, q) {
 }
 
 /**
- * MeanNew returns the jde of the mean New Moon nearest the given datthis.
+ * MeanNew returns the jde of the mean New Moon nearest the given date.
  * The mean date is within 0.5 day of the true date of New Moon.
  *
  * @param {Number} year - decimal year
@@ -43,7 +43,7 @@ export function meanNew (year) {
 }
 
 /**
- * MeanFirst returns the jde of the mean First Quarter Moon nearest the given datthis.
+ * MeanFirst returns the jde of the mean First Quarter Moon nearest the given date.
  * The mean date is within 0.5 day of the true date of First Quarter Moon.
  *
  * @param {Number} year - decimal year
@@ -54,7 +54,7 @@ export function meanFirst (year) {
 }
 
 /**
- * MeanFull returns the jde of the mean Full Moon nearest the given datthis.
+ * MeanFull returns the jde of the mean Full Moon nearest the given date.
  * The mean date is within 0.5 day of the true date of Full Moon.
  *
  * @param {Number} year - decimal year
@@ -65,7 +65,7 @@ export function meanFull (year) {
 }
 
 /**
- * MeanLast returns the jde of the mean Last Quarter Moon nearest the given datthis.
+ * MeanLast returns the jde of the mean Last Quarter Moon nearest the given date.
  * The mean date is within 0.5 day of the true date of Last Quarter Moon.
  *
  * @param {Number} year - decimal year
@@ -87,7 +87,7 @@ export function newMoon (year) {
 }
 
 /**
- * First returns the jde of First Quarter Moon nearest the given datthis.
+ * First returns the jde of First Quarter Moon nearest the given date.
  *
  * @param {Number} year - decimal year
  * @returns {Number} jde
@@ -98,7 +98,7 @@ export function first (year, month, day) {
 }
 
 /**
- * Full returns the jde of Full Moon nearest the given datthis.
+ * Full returns the jde of Full Moon nearest the given date.
  *
  * @param {Number} year - decimal year
  * @returns {Number} jde
@@ -109,7 +109,7 @@ export function full (year, month, day) {
 }
 
 /**
- * Last returns the jde of Last Quarter Moon nearest the given datthis.
+ * Last returns the jde of Last Quarter Moon nearest the given date.
  *
  * @param {Number} year - decimal year
  * @returns {Number} jde

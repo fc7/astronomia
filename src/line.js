@@ -25,9 +25,8 @@ import interp from './interpolation'
  * @param {Number} d1 - declination Coordinate 1
  * @param {Number} r2 - right ascension Coordinate 2
  * @param {Number} d2 - declination Coordinate 2
- * @param {Number} r3 - right ascension Coordinate 3
- * @param {Number} d2 - declination Coordinate 3
- * @param {Array} d3 -
+ * @param {Array} r3 - right ascensions of 5 coordinates
+ * @param {Array} d3 - declinations of 5 coordinates
  * @param {Array} t1 - time in Julian Days
  * @param {Array} t5 - time in Julian Days
  * @returns {Number} time of alignment in Julian Days
@@ -68,7 +67,7 @@ export function angle (r1, d1, r2, d2, r3, d3) { // (r1, d1, r2, d2, r3, d3 floa
 /**
  * Error returns an error angle of three nearly co-linear points.
  *
- * For the line defined by r1, d1, r2, d2, the result is the anglular distance
+ * For the line defined by r1, d1, r2, d2, the result is the angular distance
  * between that line and r0, d0.
  *
  * Algorithm by Meeus.
