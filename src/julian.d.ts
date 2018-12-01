@@ -26,7 +26,7 @@ declare module julian {
          * proleptic Gregorian Calender
          * @param {Date} date - proleptic Gregorian date
          */
-        static fromDate(date: Date): Calendar;
+        fromDate(date: Date): Calendar;
 
         /**
          * Note: Take care for dates < GREGORIAN0JD as `date` is always within the

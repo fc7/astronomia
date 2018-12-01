@@ -5,6 +5,7 @@
  */
 export = sunrise;
 export as namespace sunrise;
+import * as julian from './julian';
 declare module sunrise {
     /**
      * Computes time of sunrise, sunset for a given day `date` of an observer on earth given by latitude and longitude.
@@ -15,88 +16,88 @@ declare module sunrise {
      * @param {number} [refraction] - optional refraction
      */
     class Sunrise {
-        constructor(date: any, lat: number, lon: number, refraction?: number);
+        constructor(date: julian.Calendar, lat: number, lon: number, refraction?: number);
 
         /**
          * time of solar transit
          * @return {julian.Calendar} time of noon
          */
-        noon(): any;
+        noon(): julian.Calendar;
 
         /**
          * Solar limb appears over the easter horizon in the morning
          * @return {julian.Calendar} time of sunrise
          */
-        rise(): any;
+        rise(): julian.Calendar;
 
         /**
          * @return {julian.Calendar} time of sunset
          * Solar limb disappears on the western horizon in the evening
          */
-        set(): any;
+        set(): julian.Calendar;
 
         /**
          * Solar limb is fully visible at the easter horizon
          * @return {julian.Calendar} time of sunrise end
          */
-        riseEnd(): any;
+        riseEnd(): julian.Calendar;
 
         /**
          * Solar limb starts disappearing on the western horizon in the evening
          * @return {julian.Calendar} time of sunset start
          */
-        setStart(): any;
+        setStart(): julian.Calendar;
 
         /**
          * Dawn, there is still enough light for objects to be distinguishable,
          * @return {julian.Calendar} time of dawn
          */
-        dawn(): any;
+        dawn(): julian.Calendar;
 
         /**
          * Dusk, there is still enough light for objects to be distinguishable
          * Bright stars and planets are visible by naked eye
          * @return {julian.Calendar} time of dusk
          */
-        dusk(): any;
+        dusk(): julian.Calendar;
 
         /**
          * nautical dawn - Horizon gets visible by naked eye
          * @return {julian.Calendar} time of nautical dawn
          */
-        nauticalDawn(): any;
+        nauticalDawn(): julian.Calendar;
 
         /**
          * nautical dusk - Horizon is no longer visible by naked eye
          * @return {julian.Calendar} time of nautical dusk
          */
-        nauticalDusk(): any;
+        nauticalDusk(): julian.Calendar;
 
         /**
          * night starts - No sunlight illumination of the sky, such no intereferance
          * with astronomical observations.
          * @return {julian.Calendar} time of start of night
          */
-        nightStart(): any;
+        nightStart(): julian.Calendar;
 
         /**
          * night end - Sunlight starts illumination of the sky and interferes
          * with astronomical observations.
          * @return {julian.Calendar} time of end of night
          */
-        nightEnd(): any;
+        nightEnd(): julian.Calendar;
 
         /**
          * Start of "golden hour" before sunset
          * @return {julian.Calendar} time of start of golden hour
          */
-        goldenHourStart(): any;
+        goldenHourStart(): julian.Calendar;
 
         /**
          * End of "golden hour" after sunrise
          * @return {julian.Calendar} time of end of golden hour
          */
-        goldenHourEnd(): any;
+        goldenHourEnd(): julian.Calendar;
 
     }
 
