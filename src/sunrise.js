@@ -121,7 +121,7 @@ export class Sunrise {
   }
 
   /**
-   * Solar limb appears over the easter horizon in the morning
+   * Solar limb appears over the eastern horizon in the morning
    * @return {julian.Calendar} time of sunrise
    */
   rise () {

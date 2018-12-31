@@ -47,7 +47,7 @@ export const stdh0 = {
 /**
  * Helper function to obtain corrected refraction
  * @param {number} h0 - altitude of the body in radians containing `meanRefraction` of 0°34'
- * @param {number} corr - the calcluated refraction e.g. from package `refraction` in radians
+ * @param {number} corr - the calculated refraction e.g. from package `refraction` in radians
  * @return {number} refraction value in radians
  */
 export function refraction (h0, corr) {
